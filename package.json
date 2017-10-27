@@ -1,0 +1,28 @@
+{
+  "name": "node-app",
+  "version": "0.0.1",
+  "description": "Simple node.js application which reads from a properties file and writes those values back via HTML",
+  "main": "server.js",
+  "dependencies": {
+    "properties-reader": "0.0.15"
+  },
+  "devDependencies": {
+    "nodemon": "*"
+  },
+  "engine": {
+    "node": "*",
+    "npm": "*"
+  },
+  "scripts": {
+    "dev": "nodemon --ignore node_modules/ server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/wpernath/node-app.git"
+  },
+  "keywords": [
+    "Echo"
+  ],
+  "author": "Wanja Pernath <w.pernath@gmail.com>"
+}
