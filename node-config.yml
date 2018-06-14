@@ -4,10 +4,12 @@ items:
   data:
     BACKGROUND_MSG: This is a message which comes from an ENVIRONMENT VAR based on
       a ConfigMap
-    node-app.config: |
-      color=RED
-      server=GREEN
-      URL=http://www.golem.de/
+    node-app.config: |+
+      color=GREY
+      title=Using ConfigMaps
+      p1=This example shows you how to make use out of ConfigMaps to separate configuration from application binary
+      p2=Hope that helps
+
   kind: ConfigMap
   metadata:
     creationTimestamp: null
