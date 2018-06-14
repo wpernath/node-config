@@ -1,0 +1,16 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  data:
+    BACKGROUND_MSG: This is a message which comes from an ENVIRONMENT VAR based on
+      a ConfigMap
+    node-app.config: |
+      color=RED
+      server=GREEN
+      URL=http://www.golem.de/
+  kind: ConfigMap
+  metadata:
+    creationTimestamp: null
+    name: node-config
+kind: List
+metadata: {}
