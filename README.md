@@ -9,5 +9,5 @@ create a new ConfigMap:
 
 $ oc create -f https://raw.githubusercontent.com/wpernath/node-config/master/node-config.yml
 
-
+Edit the deployment Configuration to add the ConfigMap and mount it to /etc/node-app. Add an ENVIRONMENT Variable to the deployment based on the configMap.
 
