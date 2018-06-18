@@ -14,7 +14,7 @@ var server = http.createServer(function (req, res) {
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write('<html><head><title>' + properties.get('title') + '</title></head>');
       res.write('<body bgcolor="' + properties.get('color') + '"><br/><br/>');
-      res.write('<div>
+      res.write('<div>');
       res.write('<h1>' + properties.get('title') + '</h1><br /><br/>');
       res.write('<p>' + properties.get('p1') + '</p><br/>' );
       res.write('<p>' + properties.get('p2') + '</p><br/>' );
